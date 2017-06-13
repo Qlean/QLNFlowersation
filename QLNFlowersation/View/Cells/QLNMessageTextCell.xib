@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="QLNMessageTextCell" id="Hxk-IT-3nf" customClass="QLNMessageTextCell" customModule="QLNFlowersation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hxk-IT-3nf" id="zgS-Bt-7fK">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqp-kJ-MHJ">
+                        <rect key="frame" x="-69" y="2" width="69" height="44"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kvC-ao-001">
+                                <rect key="frame" x="0.0" y="0.0" width="69" height="44"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YoN-X6-Zch">
+                                <rect key="frame" x="16" y="18" width="37" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="Acf-ps-XwX"/>
+                                    <constraint firstAttribute="width" constant="37" id="aTz-XU-vX4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kvC-ao-001" secondAttribute="trailing" id="0py-VR-zb0"/>
+                            <constraint firstAttribute="bottom" secondItem="kvC-ao-001" secondAttribute="bottom" id="19C-Da-DP8"/>
+                            <constraint firstAttribute="bottom" secondItem="YoN-X6-Zch" secondAttribute="bottom" constant="18" id="3cY-2i-DPq"/>
+                            <constraint firstAttribute="trailing" secondItem="YoN-X6-Zch" secondAttribute="trailing" constant="16" id="QZQ-vM-xO5"/>
+                            <constraint firstItem="kvC-ao-001" firstAttribute="leading" secondItem="vqp-kJ-MHJ" secondAttribute="leading" id="RDa-CV-Y35"/>
+                            <constraint firstItem="YoN-X6-Zch" firstAttribute="leading" secondItem="vqp-kJ-MHJ" secondAttribute="leading" constant="16" id="ZTj-p0-GiL"/>
+                            <constraint firstItem="YoN-X6-Zch" firstAttribute="top" secondItem="vqp-kJ-MHJ" secondAttribute="top" constant="18" id="kmx-Y1-Bvs"/>
+                            <constraint firstItem="kvC-ao-001" firstAttribute="top" secondItem="vqp-kJ-MHJ" secondAttribute="top" id="qph-l1-z9s"/>
+                        </constraints>
+                    </view>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBX-Ja-Bf1">
+                        <rect key="frame" x="16" y="2" width="82" height="86"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eLw-En-6oz">
+                                <rect key="frame" x="0.0" y="0.0" width="82" height="86"/>
+                            </imageView>
+                            <label userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmp-Uv-q7U">
+                                <rect key="frame" x="20" y="14" width="42" height="58"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Lmp-Uv-q7U" firstAttribute="leading" secondItem="PBX-Ja-Bf1" secondAttribute="leading" constant="20" id="6J6-GB-YMp"/>
+                            <constraint firstAttribute="bottom" secondItem="eLw-En-6oz" secondAttribute="bottom" id="8Gq-Md-F9R"/>
+                            <constraint firstAttribute="trailing" secondItem="eLw-En-6oz" secondAttribute="trailing" id="DH1-2n-U0O"/>
+                            <constraint firstItem="eLw-En-6oz" firstAttribute="centerY" secondItem="PBX-Ja-Bf1" secondAttribute="centerY" id="EbT-Ww-3Wv"/>
+                            <constraint firstItem="eLw-En-6oz" firstAttribute="top" secondItem="PBX-Ja-Bf1" secondAttribute="top" id="OhT-2s-kbX"/>
+                            <constraint firstAttribute="trailing" secondItem="Lmp-Uv-q7U" secondAttribute="trailing" constant="20" id="ax7-nz-GGb"/>
+                            <constraint firstItem="Lmp-Uv-q7U" firstAttribute="top" secondItem="PBX-Ja-Bf1" secondAttribute="top" constant="14" id="dml-qB-QMk"/>
+                            <constraint firstItem="Lmp-Uv-q7U" firstAttribute="centerY" secondItem="PBX-Ja-Bf1" secondAttribute="centerY" id="fCs-Qz-wlb"/>
+                            <constraint firstItem="eLw-En-6oz" firstAttribute="leading" secondItem="PBX-Ja-Bf1" secondAttribute="leading" id="hQd-jW-p4A"/>
+                            <constraint firstAttribute="bottom" secondItem="Lmp-Uv-q7U" secondAttribute="bottom" constant="14" id="p10-gC-IDK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vqp-kJ-MHJ" firstAttribute="leading" secondItem="zgS-Bt-7fK" secondAttribute="leading" priority="1" constant="16" id="0JK-hE-rcC"/>
+                    <constraint firstItem="PBX-Ja-Bf1" firstAttribute="leading" secondItem="zgS-Bt-7fK" secondAttribute="leading" priority="999" constant="16" id="3Ju-GN-6Ph"/>
+                    <constraint firstItem="PBX-Ja-Bf1" firstAttribute="top" secondItem="zgS-Bt-7fK" secondAttribute="top" priority="999" constant="2" id="6wh-mF-3Yz"/>
+                    <constraint firstAttribute="bottom" secondItem="PBX-Ja-Bf1" secondAttribute="bottom" priority="1" constant="10" id="Kqa-ah-J9v"/>
+                    <constraint firstItem="PBX-Ja-Bf1" firstAttribute="top" secondItem="zgS-Bt-7fK" secondAttribute="top" priority="1" constant="10" id="T4K-c3-YqZ"/>
+                    <constraint firstItem="PBX-Ja-Bf1" firstAttribute="leading" secondItem="zgS-Bt-7fK" secondAttribute="trailing" priority="1" id="diu-h1-c3h"/>
+                    <constraint firstAttribute="trailing" secondItem="PBX-Ja-Bf1" secondAttribute="trailing" priority="1" constant="16" id="eCl-VI-1Ih"/>
+                    <constraint firstItem="PBX-Ja-Bf1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zgS-Bt-7fK" secondAttribute="leading" priority="1" constant="16" id="hSF-Ue-A0W"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PBX-Ja-Bf1" secondAttribute="trailing" priority="999" constant="48" id="j3f-eY-cgS"/>
+                    <constraint firstAttribute="bottom" secondItem="PBX-Ja-Bf1" secondAttribute="bottom" priority="999" constant="2" id="m85-bg-nWq"/>
+                    <constraint firstAttribute="leading" secondItem="PBX-Ja-Bf1" secondAttribute="trailing" priority="1" id="u8U-pT-1EW"/>
+                    <constraint firstAttribute="leading" secondItem="vqp-kJ-MHJ" secondAttribute="trailing" priority="999" id="xBV-pN-i9O"/>
+                    <constraint firstItem="vqp-kJ-MHJ" firstAttribute="top" secondItem="zgS-Bt-7fK" secondAttribute="top" constant="2" id="ziX-cZ-1Io"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="bubbleBottomBigPaddingConstraint" destination="Kqa-ah-J9v" id="uZt-5r-wya"/>
+                <outlet property="bubbleBottomLittlePaddingConstraint" destination="m85-bg-nWq" id="SXq-Iy-yDO"/>
+                <outlet property="bubbleImageView" destination="eLw-En-6oz" id="Mg6-vm-sew"/>
+                <outlet property="bubbleTopBigPaddingConstraint" destination="T4K-c3-YqZ" id="yGV-NU-zq9"/>
+                <outlet property="bubbleTopLittlePaddingConstraint" destination="6wh-mF-3Yz" id="MgN-Iq-Vap"/>
+                <outlet property="bubbleView" destination="PBX-Ja-Bf1" id="X4K-7d-JG9"/>
+                <outlet property="incomingBackgroundConstraint" destination="u8U-pT-1EW" id="vwr-8d-V95"/>
+                <outlet property="leadingTypingConstraint" destination="0JK-hE-rcC" id="u3C-7A-0Xp"/>
+                <outlet property="messageLabel" destination="Lmp-Uv-q7U" id="CXR-T2-8G0"/>
+                <outlet property="messageLeftMaybePaddingConstraint" destination="hSF-Ue-A0W" id="Qgu-zo-WMA"/>
+                <outlet property="messageLeftStrictPaddingConstraint" destination="3Ju-GN-6Ph" id="ssI-iD-Orx"/>
+                <outlet property="messageRightMaybePaddingConstraint" destination="j3f-eY-cgS" id="KoJ-x2-mV8"/>
+                <outlet property="messageRightStrictPaddingConstraint" destination="eCl-VI-1Ih" id="5Jr-hC-yP1"/>
+                <outlet property="outgoingBackgroundConstraint" destination="diu-h1-c3h" id="BHt-IS-VfY"/>
+                <outlet property="trailingTypingConstraint" destination="xBV-pN-i9O" id="tde-yD-oeg"/>
+                <outlet property="typingContainer" destination="vqp-kJ-MHJ" id="GF7-4a-oVw"/>
+                <outlet property="typingContainerBackgroundImageView" destination="kvC-ao-001" id="D5a-Tz-K1P"/>
+                <outlet property="typingImageView" destination="YoN-X6-Zch" id="VUP-t6-eit"/>
+            </connections>
+            <point key="canvasLocation" x="203" y="223.5"/>
+        </tableViewCell>
+    </objects>
+</document>

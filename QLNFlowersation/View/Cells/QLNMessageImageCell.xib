@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="QLNMessageImageCell" id="Hxk-IT-3nf" customClass="QLNMessageImageCell" customModule="QLNFlowersation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hxk-IT-3nf" id="zgS-Bt-7fK">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBX-Ja-Bf1">
+                        <rect key="frame" x="16" y="2" width="200" height="86"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eLw-En-6oz">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="86"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="eLw-En-6oz" secondAttribute="bottom" id="8Gq-Md-F9R"/>
+                            <constraint firstAttribute="trailing" secondItem="eLw-En-6oz" secondAttribute="trailing" id="DH1-2n-U0O"/>
+                            <constraint firstItem="eLw-En-6oz" firstAttribute="top" secondItem="PBX-Ja-Bf1" secondAttribute="top" id="OhT-2s-kbX"/>
+                            <constraint firstAttribute="height" priority="999" constant="86" placeholder="YES" id="Rnm-ss-ziY"/>
+                            <constraint firstAttribute="width" constant="200" id="boa-m2-656"/>
+                            <constraint firstItem="eLw-En-6oz" firstAttribute="leading" secondItem="PBX-Ja-Bf1" secondAttribute="leading" id="hQd-jW-p4A"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PBX-Ja-Bf1" firstAttribute="leading" secondItem="zgS-Bt-7fK" secondAttribute="leading" priority="999" constant="16" id="3Ju-GN-6Ph"/>
+                    <constraint firstItem="PBX-Ja-Bf1" firstAttribute="top" secondItem="zgS-Bt-7fK" secondAttribute="top" priority="999" constant="2" id="6wh-mF-3Yz"/>
+                    <constraint firstAttribute="trailing" secondItem="PBX-Ja-Bf1" secondAttribute="trailing" priority="999" constant="48" id="j3f-eY-cgS"/>
+                    <constraint firstAttribute="bottom" secondItem="PBX-Ja-Bf1" secondAttribute="bottom" priority="999" constant="2" id="m85-bg-nWq"/>
+                    <constraint firstAttribute="leading" secondItem="PBX-Ja-Bf1" secondAttribute="trailing" priority="1" id="zuV-Q2-YGL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="containerLeadingConstraint" destination="3Ju-GN-6Ph" id="oNB-Ue-AZ9"/>
+                <outlet property="containerTrailingConstraint" destination="j3f-eY-cgS" id="8c0-YL-YKU"/>
+                <outlet property="contentImageView" destination="eLw-En-6oz" id="F7H-pN-QYj"/>
+                <outlet property="incomingBackgroundConstraint" destination="zuV-Q2-YGL" id="l3q-z6-vuB"/>
+                <outlet property="widthConstraint" destination="boa-m2-656" id="3HV-d3-0i6"/>
+            </connections>
+            <point key="canvasLocation" x="203" y="223.5"/>
+        </tableViewCell>
+    </objects>
+</document>

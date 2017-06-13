@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		649EB24A55DBECF0C5E167B6 /* Pods_BasePods_QLNFlowersation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D479388652D8EDC158DA310 /* Pods_BasePods_QLNFlowersation.framework */; };
+		705947439486820CA2815AA7 /* Pods_BasePods_QLNFlowersationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC6ADAF519F1EDE5A629A30 /* Pods_BasePods_QLNFlowersationTests.framework */; };
+		A106F3EB1EEC2FB500A8EFCC /* QLNMessagesProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A106F3EA1EEC2FB500A8EFCC /* QLNMessagesProviderDelegate.swift */; };
+		A106F3ED1EEC33A300A8EFCC /* QLNFlowersation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A106F3EC1EEC33A300A8EFCC /* QLNFlowersation.swift */; };
+		A14B01DF1EEAFFF0006CF385 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B01DE1EEAFFF0006CF385 /* UIImage.swift */; };
+		A14B01E31EEB00C8006CF385 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B01E21EEB00C8006CF385 /* UIColor.swift */; };
+		A14B01E71EEB09EF006CF385 /* CommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B01E61EEB09EF006CF385 /* CommonHelper.swift */; };
+		A14B01E91EEB0AEA006CF385 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14B01E81EEB0AEA006CF385 /* NSAttributedString.swift */; };
+		A14CE9D71EEAFA98001CD897 /* QLNFlowersation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14CE9CD1EEAFA97001CD897 /* QLNFlowersation.framework */; };
+		A14CE9DC1EEAFA98001CD897 /* QLNFlowersationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14CE9DB1EEAFA98001CD897 /* QLNFlowersationTests.swift */; };
+		A14CE9DE1EEAFA98001CD897 /* QLNFlowersation.h in Headers */ = {isa = PBXBuildFile; fileRef = A14CE9D01EEAFA97001CD897 /* QLNFlowersation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A188B67C1EED9DAF00A57EF2 /* QLNFlowersationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188B6791EED9DAF00A57EF2 /* QLNFlowersationPresenter.swift */; };
+		A188B67D1EED9DAF00A57EF2 /* QLNMessagesSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188B67A1EED9DAF00A57EF2 /* QLNMessagesSettings.swift */; };
+		A188B67E1EED9DAF00A57EF2 /* QLNMessageViewModelFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188B67B1EED9DAF00A57EF2 /* QLNMessageViewModelFabric.swift */; };
+		A188B6821EED9F0700A57EF2 /* QLNMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188B6811EED9F0700A57EF2 /* QLNMessagesViewController.swift */; };
+		A188B6841EED9F6800A57EF2 /* QLNFlowersationViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188B6831EED9F6800A57EF2 /* QLNFlowersationViewInterface.swift */; };
+		A188B6861EEDA01600A57EF2 /* QLNFlowersationIntercator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188B6851EEDA01600A57EF2 /* QLNFlowersationIntercator.swift */; };
+		A188B6881EEDA09A00A57EF2 /* QLNFlowersationInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A188B6871EEDA09A00A57EF2 /* QLNFlowersationInteractorInterface.swift */; };
+		A1A398FB1EEAFB06002EA4B9 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A398FA1EEAFB06002EA4B9 /* Media.xcassets */; };
+		A1A3990A1EEAFBA0002EA4B9 /* QLNMessagesBubbleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A398FD1EEAFBA0002EA4B9 /* QLNMessagesBubbleFactory.swift */; };
+		A1A3990B1EEAFBA0002EA4B9 /* QLNMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A398FF1EEAFBA0002EA4B9 /* QLNMessage.swift */; };
+		A1A3990C1EEAFBA0002EA4B9 /* QLNMessageImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A399001EEAFBA0002EA4B9 /* QLNMessageImage.swift */; };
+		A1A3990D1EEAFBA0002EA4B9 /* QLNMessageReaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A399011EEAFBA0002EA4B9 /* QLNMessageReaction.swift */; };
+		A1A3990F1EEAFBA0002EA4B9 /* QLNMessageImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A399051EEAFBA0002EA4B9 /* QLNMessageImageCell.swift */; };
+		A1A399101EEAFBA0002EA4B9 /* QLNMessageImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1A399061EEAFBA0002EA4B9 /* QLNMessageImageCell.xib */; };
+		A1A399111EEAFBA0002EA4B9 /* QLNMessageTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A399071EEAFBA0002EA4B9 /* QLNMessageTextCell.swift */; };
+		A1A399121EEAFBA0002EA4B9 /* QLNMessageTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1A399081EEAFBA0002EA4B9 /* QLNMessageTextCell.xib */; };
+		A1A399131EEAFBA0002EA4B9 /* QLNMessageReactionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A399091EEAFBA0002EA4B9 /* QLNMessageReactionButton.swift */; };
+		A1A399151EEAFBB3002EA4B9 /* QLNMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1A399141EEAFBB3002EA4B9 /* QLNMessagesViewController.xib */; };
+		A1CD75891EED875300322EB0 /* QLNMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CD75881EED875300322EB0 /* QLNMessageViewModel.swift */; };
+		C93756DE6000AD1F2686BBA7 /* Pods_QLNFlowersationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1B6E06EFD871CF03B0BD04 /* Pods_QLNFlowersationTests.framework */; };
+		F2540F2646B69E6F1F636F2D /* Pods_QLNFlowersation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E45E3D2C8F23A8E79ED53C7 /* Pods_QLNFlowersation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A14CE9D81EEAFA98001CD897 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14CE9C41EEAFA97001CD897 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A14CE9CC1EEAFA97001CD897;
+			remoteInfo = QLNFlowersation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D0E2D6ED22DDA290C874784 /* Pods-QLNFlowersationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLNFlowersationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLNFlowersationTests/Pods-QLNFlowersationTests.release.xcconfig"; sourceTree = "<group>"; };
+		2FCA61E228DD859B8AB453C4 /* Pods-BasePods-QLNFlowersationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasePods-QLNFlowersationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BasePods-QLNFlowersationTests/Pods-BasePods-QLNFlowersationTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C1C299AF931119687764B01 /* Pods-BasePods-QLNFlowersation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasePods-QLNFlowersation.release.xcconfig"; path = "Pods/Target Support Files/Pods-BasePods-QLNFlowersation/Pods-BasePods-QLNFlowersation.release.xcconfig"; sourceTree = "<group>"; };
+		3FF704DA61BDE750A319EE90 /* Pods-QLNFlowersation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLNFlowersation.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLNFlowersation/Pods-QLNFlowersation.release.xcconfig"; sourceTree = "<group>"; };
+		4E45E3D2C8F23A8E79ED53C7 /* Pods_QLNFlowersation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLNFlowersation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D479388652D8EDC158DA310 /* Pods_BasePods_QLNFlowersation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasePods_QLNFlowersation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A106F3EA1EEC2FB500A8EFCC /* QLNMessagesProviderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessagesProviderDelegate.swift; sourceTree = "<group>"; };
+		A106F3EC1EEC33A300A8EFCC /* QLNFlowersation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNFlowersation.swift; sourceTree = "<group>"; };
+		A14B01DE1EEAFFF0006CF385 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		A14B01E21EEB00C8006CF385 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A14B01E61EEB09EF006CF385 /* CommonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonHelper.swift; sourceTree = "<group>"; };
+		A14B01E81EEB0AEA006CF385 /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
+		A14CE9CD1EEAFA97001CD897 /* QLNFlowersation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QLNFlowersation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14CE9D01EEAFA97001CD897 /* QLNFlowersation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLNFlowersation.h; sourceTree = "<group>"; };
+		A14CE9D11EEAFA97001CD897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14CE9D61EEAFA98001CD897 /* QLNFlowersationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLNFlowersationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14CE9DB1EEAFA98001CD897 /* QLNFlowersationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLNFlowersationTests.swift; sourceTree = "<group>"; };
+		A14CE9DD1EEAFA98001CD897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A188B6791EED9DAF00A57EF2 /* QLNFlowersationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNFlowersationPresenter.swift; sourceTree = "<group>"; };
+		A188B67A1EED9DAF00A57EF2 /* QLNMessagesSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessagesSettings.swift; sourceTree = "<group>"; };
+		A188B67B1EED9DAF00A57EF2 /* QLNMessageViewModelFabric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessageViewModelFabric.swift; sourceTree = "<group>"; };
+		A188B6811EED9F0700A57EF2 /* QLNMessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessagesViewController.swift; sourceTree = "<group>"; };
+		A188B6831EED9F6800A57EF2 /* QLNFlowersationViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNFlowersationViewInterface.swift; sourceTree = "<group>"; };
+		A188B6851EEDA01600A57EF2 /* QLNFlowersationIntercator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNFlowersationIntercator.swift; sourceTree = "<group>"; };
+		A188B6871EEDA09A00A57EF2 /* QLNFlowersationInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNFlowersationInteractorInterface.swift; sourceTree = "<group>"; };
+		A1A398FA1EEAFB06002EA4B9 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		A1A398FD1EEAFBA0002EA4B9 /* QLNMessagesBubbleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessagesBubbleFactory.swift; sourceTree = "<group>"; };
+		A1A398FF1EEAFBA0002EA4B9 /* QLNMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessage.swift; sourceTree = "<group>"; };
+		A1A399001EEAFBA0002EA4B9 /* QLNMessageImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessageImage.swift; sourceTree = "<group>"; };
+		A1A399011EEAFBA0002EA4B9 /* QLNMessageReaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessageReaction.swift; sourceTree = "<group>"; };
+		A1A399051EEAFBA0002EA4B9 /* QLNMessageImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessageImageCell.swift; sourceTree = "<group>"; };
+		A1A399061EEAFBA0002EA4B9 /* QLNMessageImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLNMessageImageCell.xib; sourceTree = "<group>"; };
+		A1A399071EEAFBA0002EA4B9 /* QLNMessageTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessageTextCell.swift; sourceTree = "<group>"; };
+		A1A399081EEAFBA0002EA4B9 /* QLNMessageTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLNMessageTextCell.xib; sourceTree = "<group>"; };
+		A1A399091EEAFBA0002EA4B9 /* QLNMessageReactionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessageReactionButton.swift; sourceTree = "<group>"; };
+		A1A399141EEAFBB3002EA4B9 /* QLNMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLNMessagesViewController.xib; sourceTree = "<group>"; };
+		A1CD75881EED875300322EB0 /* QLNMessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNMessageViewModel.swift; sourceTree = "<group>"; };
+		B91BB2D6EADDA150098FC6FD /* Pods-BasePods-QLNFlowersation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasePods-QLNFlowersation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BasePods-QLNFlowersation/Pods-BasePods-QLNFlowersation.debug.xcconfig"; sourceTree = "<group>"; };
+		C65CBB14E7EF63C2F2462C1C /* Pods-QLNFlowersationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLNFlowersationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLNFlowersationTests/Pods-QLNFlowersationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C68AE3BDEFB236AC6EF302F4 /* Pods-QLNFlowersation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLNFlowersation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLNFlowersation/Pods-QLNFlowersation.debug.xcconfig"; sourceTree = "<group>"; };
+		D769ED08D6F90285506349BB /* Pods-BasePods-QLNFlowersationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasePods-QLNFlowersationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BasePods-QLNFlowersationTests/Pods-BasePods-QLNFlowersationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE1B6E06EFD871CF03B0BD04 /* Pods_QLNFlowersationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLNFlowersationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC6ADAF519F1EDE5A629A30 /* Pods_BasePods_QLNFlowersationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasePods_QLNFlowersationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A14CE9C91EEAFA97001CD897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649EB24A55DBECF0C5E167B6 /* Pods_BasePods_QLNFlowersation.framework in Frameworks */,
+				F2540F2646B69E6F1F636F2D /* Pods_QLNFlowersation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14CE9D31EEAFA98001CD897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14CE9D71EEAFA98001CD897 /* QLNFlowersation.framework in Frameworks */,
+				705947439486820CA2815AA7 /* Pods_BasePods_QLNFlowersationTests.framework in Frameworks */,
+				C93756DE6000AD1F2686BBA7 /* Pods_QLNFlowersationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DF088F721884C51A1C8E514 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D479388652D8EDC158DA310 /* Pods_BasePods_QLNFlowersation.framework */,
+				EFC6ADAF519F1EDE5A629A30 /* Pods_BasePods_QLNFlowersationTests.framework */,
+				4E45E3D2C8F23A8E79ED53C7 /* Pods_QLNFlowersation.framework */,
+				DE1B6E06EFD871CF03B0BD04 /* Pods_QLNFlowersationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A14B01DD1EEAFFC4006CF385 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A14B01DE1EEAFFF0006CF385 /* UIImage.swift */,
+				A14B01E21EEB00C8006CF385 /* UIColor.swift */,
+				A14B01E81EEB0AEA006CF385 /* NSAttributedString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A14CE9C31EEAFA97001CD897 = {
+			isa = PBXGroup;
+			children = (
+				A14CE9CF1EEAFA97001CD897 /* QLNFlowersation */,
+				A14CE9DA1EEAFA98001CD897 /* QLNFlowersationTests */,
+				A14CE9CE1EEAFA97001CD897 /* Products */,
+				AC604863E6D2E494B831B37C /* Pods */,
+				5DF088F721884C51A1C8E514 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A14CE9CE1EEAFA97001CD897 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A14CE9CD1EEAFA97001CD897 /* QLNFlowersation.framework */,
+				A14CE9D61EEAFA98001CD897 /* QLNFlowersationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A14CE9CF1EEAFA97001CD897 /* QLNFlowersation */ = {
+			isa = PBXGroup;
+			children = (
+				A14B01DD1EEAFFC4006CF385 /* Extensions */,
+				A1A398FC1EEAFBA0002EA4B9 /* Helpers */,
+				A1A398FE1EEAFBA0002EA4B9 /* Model */,
+				A188B6781EED9DAF00A57EF2 /* Presenter */,
+				A1A399031EEAFBA0002EA4B9 /* View */,
+				A14CE9D01EEAFA97001CD897 /* QLNFlowersation.h */,
+				A14CE9D11EEAFA97001CD897 /* Info.plist */,
+				A1A398FA1EEAFB06002EA4B9 /* Media.xcassets */,
+			);
+			path = QLNFlowersation;
+			sourceTree = "<group>";
+		};
+		A14CE9DA1EEAFA98001CD897 /* QLNFlowersationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A14CE9DB1EEAFA98001CD897 /* QLNFlowersationTests.swift */,
+				A14CE9DD1EEAFA98001CD897 /* Info.plist */,
+			);
+			path = QLNFlowersationTests;
+			sourceTree = "<group>";
+		};
+		A188B6781EED9DAF00A57EF2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A188B6791EED9DAF00A57EF2 /* QLNFlowersationPresenter.swift */,
+				A188B67A1EED9DAF00A57EF2 /* QLNMessagesSettings.swift */,
+				A188B67B1EED9DAF00A57EF2 /* QLNMessageViewModelFabric.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A1A398FC1EEAFBA0002EA4B9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A1A398FD1EEAFBA0002EA4B9 /* QLNMessagesBubbleFactory.swift */,
+				A14B01E61EEB09EF006CF385 /* CommonHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A1A398FE1EEAFBA0002EA4B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A106F3EC1EEC33A300A8EFCC /* QLNFlowersation.swift */,
+				A1A398FF1EEAFBA0002EA4B9 /* QLNMessage.swift */,
+				A1A399001EEAFBA0002EA4B9 /* QLNMessageImage.swift */,
+				A1A399011EEAFBA0002EA4B9 /* QLNMessageReaction.swift */,
+				A106F3EA1EEC2FB500A8EFCC /* QLNMessagesProviderDelegate.swift */,
+				A1CD75881EED875300322EB0 /* QLNMessageViewModel.swift */,
+				A188B6851EEDA01600A57EF2 /* QLNFlowersationIntercator.swift */,
+				A188B6871EEDA09A00A57EF2 /* QLNFlowersationInteractorInterface.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1A399031EEAFBA0002EA4B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A188B6831EED9F6800A57EF2 /* QLNFlowersationViewInterface.swift */,
+				A188B6811EED9F0700A57EF2 /* QLNMessagesViewController.swift */,
+				A1A399041EEAFBA0002EA4B9 /* Cells */,
+				A1A399091EEAFBA0002EA4B9 /* QLNMessageReactionButton.swift */,
+				A1A399141EEAFBB3002EA4B9 /* QLNMessagesViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1A399041EEAFBA0002EA4B9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A1A399051EEAFBA0002EA4B9 /* QLNMessageImageCell.swift */,
+				A1A399061EEAFBA0002EA4B9 /* QLNMessageImageCell.xib */,
+				A1A399071EEAFBA0002EA4B9 /* QLNMessageTextCell.swift */,
+				A1A399081EEAFBA0002EA4B9 /* QLNMessageTextCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AC604863E6D2E494B831B37C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B91BB2D6EADDA150098FC6FD /* Pods-BasePods-QLNFlowersation.debug.xcconfig */,
+				3C1C299AF931119687764B01 /* Pods-BasePods-QLNFlowersation.release.xcconfig */,
+				D769ED08D6F90285506349BB /* Pods-BasePods-QLNFlowersationTests.debug.xcconfig */,
+				2FCA61E228DD859B8AB453C4 /* Pods-BasePods-QLNFlowersationTests.release.xcconfig */,
+				C68AE3BDEFB236AC6EF302F4 /* Pods-QLNFlowersation.debug.xcconfig */,
+				3FF704DA61BDE750A319EE90 /* Pods-QLNFlowersation.release.xcconfig */,
+				C65CBB14E7EF63C2F2462C1C /* Pods-QLNFlowersationTests.debug.xcconfig */,
+				1D0E2D6ED22DDA290C874784 /* Pods-QLNFlowersationTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A14CE9CA1EEAFA97001CD897 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14CE9DE1EEAFA98001CD897 /* QLNFlowersation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A14CE9CC1EEAFA97001CD897 /* QLNFlowersation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14CE9E11EEAFA98001CD897 /* Build configuration list for PBXNativeTarget "QLNFlowersation" */;
+			buildPhases = (
+				0C1433A90A69670A604CD37A /* [CP] Check Pods Manifest.lock */,
+				A14CE9C81EEAFA97001CD897 /* Sources */,
+				A14CE9C91EEAFA97001CD897 /* Frameworks */,
+				A14CE9CA1EEAFA97001CD897 /* Headers */,
+				A14CE9CB1EEAFA97001CD897 /* Resources */,
+				403ABD30B58C223A34395EF4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QLNFlowersation;
+			productName = QLNFlowersation;
+			productReference = A14CE9CD1EEAFA97001CD897 /* QLNFlowersation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A14CE9D51EEAFA98001CD897 /* QLNFlowersationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14CE9E41EEAFA98001CD897 /* Build configuration list for PBXNativeTarget "QLNFlowersationTests" */;
+			buildPhases = (
+				BE708B806B0779AD0033F9E8 /* [CP] Check Pods Manifest.lock */,
+				A14CE9D21EEAFA98001CD897 /* Sources */,
+				A14CE9D31EEAFA98001CD897 /* Frameworks */,
+				A14CE9D41EEAFA98001CD897 /* Resources */,
+				C1E8F11408C921DDA6B205A3 /* [CP] Embed Pods Frameworks */,
+				94CF81EA4C7207AAC99FDFAE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A14CE9D91EEAFA98001CD897 /* PBXTargetDependency */,
+			);
+			name = QLNFlowersationTests;
+			productName = QLNFlowersationTests;
+			productReference = A14CE9D61EEAFA98001CD897 /* QLNFlowersationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A14CE9C41EEAFA97001CD897 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Qlean;
+				TargetAttributes = {
+					A14CE9CC1EEAFA97001CD897 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = XQNGHA44G8;
+						ProvisioningStyle = Automatic;
+					};
+					A14CE9D51EEAFA98001CD897 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = XQNGHA44G8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A14CE9C71EEAFA97001CD897 /* Build configuration list for PBXProject "QLNFlowersation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A14CE9C31EEAFA97001CD897;
+			productRefGroup = A14CE9CE1EEAFA97001CD897 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A14CE9CC1EEAFA97001CD897 /* QLNFlowersation */,
+				A14CE9D51EEAFA98001CD897 /* QLNFlowersationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A14CE9CB1EEAFA97001CD897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A399151EEAFBB3002EA4B9 /* QLNMessagesViewController.xib in Resources */,
+				A1A399121EEAFBA0002EA4B9 /* QLNMessageTextCell.xib in Resources */,
+				A1A398FB1EEAFB06002EA4B9 /* Media.xcassets in Resources */,
+				A1A399101EEAFBA0002EA4B9 /* QLNMessageImageCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14CE9D41EEAFA98001CD897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C1433A90A69670A604CD37A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		403ABD30B58C223A34395EF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLNFlowersation/Pods-QLNFlowersation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94CF81EA4C7207AAC99FDFAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLNFlowersationTests/Pods-QLNFlowersationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE708B806B0779AD0033F9E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E8F11408C921DDA6B205A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QLNFlowersationTests/Pods-QLNFlowersationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A14CE9C81EEAFA97001CD897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A3990D1EEAFBA0002EA4B9 /* QLNMessageReaction.swift in Sources */,
+				A14B01E31EEB00C8006CF385 /* UIColor.swift in Sources */,
+				A188B67D1EED9DAF00A57EF2 /* QLNMessagesSettings.swift in Sources */,
+				A1A3990F1EEAFBA0002EA4B9 /* QLNMessageImageCell.swift in Sources */,
+				A188B6821EED9F0700A57EF2 /* QLNMessagesViewController.swift in Sources */,
+				A14B01E91EEB0AEA006CF385 /* NSAttributedString.swift in Sources */,
+				A106F3ED1EEC33A300A8EFCC /* QLNFlowersation.swift in Sources */,
+				A1A399131EEAFBA0002EA4B9 /* QLNMessageReactionButton.swift in Sources */,
+				A1A399111EEAFBA0002EA4B9 /* QLNMessageTextCell.swift in Sources */,
+				A106F3EB1EEC2FB500A8EFCC /* QLNMessagesProviderDelegate.swift in Sources */,
+				A188B67C1EED9DAF00A57EF2 /* QLNFlowersationPresenter.swift in Sources */,
+				A1A3990A1EEAFBA0002EA4B9 /* QLNMessagesBubbleFactory.swift in Sources */,
+				A1CD75891EED875300322EB0 /* QLNMessageViewModel.swift in Sources */,
+				A188B6841EED9F6800A57EF2 /* QLNFlowersationViewInterface.swift in Sources */,
+				A188B6861EEDA01600A57EF2 /* QLNFlowersationIntercator.swift in Sources */,
+				A188B6881EEDA09A00A57EF2 /* QLNFlowersationInteractorInterface.swift in Sources */,
+				A1A3990C1EEAFBA0002EA4B9 /* QLNMessageImage.swift in Sources */,
+				A14B01DF1EEAFFF0006CF385 /* UIImage.swift in Sources */,
+				A188B67E1EED9DAF00A57EF2 /* QLNMessageViewModelFabric.swift in Sources */,
+				A14B01E71EEB09EF006CF385 /* CommonHelper.swift in Sources */,
+				A1A3990B1EEAFBA0002EA4B9 /* QLNMessage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14CE9D21EEAFA98001CD897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14CE9DC1EEAFA98001CD897 /* QLNFlowersationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A14CE9D91EEAFA98001CD897 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A14CE9CC1EEAFA97001CD897 /* QLNFlowersation */;
+			targetProxy = A14CE9D81EEAFA98001CD897 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A14CE9DF1EEAFA98001CD897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A14CE9E01EEAFA98001CD897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A14CE9E21EEAFA98001CD897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C68AE3BDEFB236AC6EF302F4 /* Pods-QLNFlowersation.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XQNGHA44G8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QLNFlowersation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qlean.QLNFlowersation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A14CE9E31EEAFA98001CD897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF704DA61BDE750A319EE90 /* Pods-QLNFlowersation.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XQNGHA44G8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QLNFlowersation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qlean.QLNFlowersation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A14CE9E51EEAFA98001CD897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C65CBB14E7EF63C2F2462C1C /* Pods-QLNFlowersationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				DEVELOPMENT_TEAM = XQNGHA44G8;
+				INFOPLIST_FILE = QLNFlowersationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qlean.QLNFlowersationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A14CE9E61EEAFA98001CD897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D0E2D6ED22DDA290C874784 /* Pods-QLNFlowersationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				DEVELOPMENT_TEAM = XQNGHA44G8;
+				INFOPLIST_FILE = QLNFlowersationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qlean.QLNFlowersationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A14CE9C71EEAFA97001CD897 /* Build configuration list for PBXProject "QLNFlowersation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14CE9DF1EEAFA98001CD897 /* Debug */,
+				A14CE9E01EEAFA98001CD897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14CE9E11EEAFA98001CD897 /* Build configuration list for PBXNativeTarget "QLNFlowersation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14CE9E21EEAFA98001CD897 /* Debug */,
+				A14CE9E31EEAFA98001CD897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14CE9E41EEAFA98001CD897 /* Build configuration list for PBXNativeTarget "QLNFlowersationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14CE9E51EEAFA98001CD897 /* Debug */,
+				A14CE9E61EEAFA98001CD897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A14CE9C41EEAFA97001CD897 /* Project object */;
+}
