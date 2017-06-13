@@ -4,8 +4,6 @@ Simple chatbot-like interface. This is test project and not heavy well-designed 
 Probably is not suitable for your production chatbot interface.
 Designed to provide basic idea about the system (how it should be designed, for example).
 
-![Example](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Example")
-
 ## Include as pod to your own project
 
 Add the line to your Podfile:
@@ -14,3 +12,5 @@ Add the line to your Podfile:
 ## Check Example project
 
 Got to /Example folder and execute `pod install`
+
+![Chatbot example](https://raw.githubusercontent.com/Qlean/QLNFlowersation/master/Example/screenshot.png "Chatbot example")
